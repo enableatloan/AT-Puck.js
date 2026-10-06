@@ -1,0 +1,55 @@
+var kb = require("ble_hid_keyboard"); 
+
+NRF.setServices(undefined, { hid : kb.report }); 
+
+ 
+
+setWatch (function(e) { 
+
+  var len = e.time - e.lastTime; 
+
+  if (len < 1){ 
+
+     digitalPulse(LED1, 1, 100); 
+
+ // camera on/off 
+
+    kb.tap(kb.KEY.O, kb.MODIFY.SHIFT | kb.MODIFY.CTRL); 
+
+   } 
+
+  else{ 
+
+  digitalPulse(LED2, 1, 100); 
+
+   // Microphone on/off 
+
+    kb.tap(kb.KEY.M, kb.MODIFY.SHIFT | kb.MODIFY.CTRL); 
+
+  } 
+
+   
+
+}, BTN, { edge:"falling",repeat:true,debounce:50});   
+
+ 
+
+NRF.setAdvertising([ 
+
+  {}, // include original Advertising packet 
+
+  [   // second packet containing 'appearance' 
+
+    2, 1, 6,  // standard Bluetooth flags 
+
+    3,3,0x12,0x18, // HID Service 
+
+    3,0x19,0xc1,0x03 // Appearance: 0x03C1 Keyboard 
+
+        // 0xc2,0x03 : 0x03C2 Mouse 
+
+        // 0xc3,0x03 : 0x03C3 Joystick 
+
+  ] 
+
+]); 
