@@ -25,7 +25,7 @@ Once paired, a single press of the Puck.js can trigger the entire key sequence a
 
 Watch the full setup guide here: https://youtu.be/Ld7_f_zg-ZM
 
-Ctrl+Alt+Delete Setup Video
+
 Advantages
 Low-power wireless operation.
 Compact and highly portable.
