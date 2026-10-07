@@ -10,7 +10,7 @@ The Puck.js is particularly useful for simplifying complex keyboard shortcuts th
 
 Microsoft Teams Example
 
-For a demonstration of how to program the Puck.js to control Microsoft Teams using keyboard shortcuts, watch the following video:
+For a demonstration of how to program the Puck.js to control Microsoft Teams using keyboard shortcuts, watch the following video: https://youtu.be/XveXhkPVSmU 
 
 Microsoft Teams Puck.js Demonstration
 Sending a Ctrl+Alt+Delete Command
@@ -24,7 +24,7 @@ Pair the Puck.js directly with your computer via Bluetooth.
 
 Once paired, a single press of the Puck.js can trigger the entire key sequence automatically.
 
-Watch the full setup guide here:
+Watch the full setup guide here: https://youtu.be/Ld7_f_zg-ZM
 
 Ctrl+Alt+Delete Setup Video
 Advantages
