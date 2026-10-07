@@ -41,4 +41,5 @@ Verdict
 
 The Puck.js has significant potential as a versatile assistive technology tool. Its programmability, wireless connectivity, and Bluetooth HID capabilities make it suitable for a wide range of accessibility applications, from computer access to environmental control and communication support.
 
-For more information, visit the Puck.js website.
+For more information, visit the Puck.js website https://www.puck-js.com/
+
