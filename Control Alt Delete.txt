@@ -1,0 +1,13 @@
+//Control Alt Delete
+var kb = require("ble_hid_keyboard");
+NRF.setServices(undefined, { hid : kb.report });
+function btnPressed() {
+  kb.tap(kb.KEY.DELETE, kb.MODIFY.ALT | kb.MODIFY.CTRL);
+  digitalPulse(LED1, 1, 100);
+}
+
+// trigger btnPressed whenever the button is pressed
+
+setWatch(btnPressed, BTN, {edge:"rising",repeat:true,debounce:50});
+
+
